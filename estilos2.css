@@ -36,6 +36,7 @@
 }
 .aside {
   grid-area: aside;
+  font-family: arial, sans-serif;
 }
 .footer {
   grid-area: footer;
