@@ -29,22 +29,136 @@
     </div>
     <div class="form">
         <form action="https://www.google.com/search">
-            <div class="fase1">
-                all this words:<input type="text" name ="q">
-                this exact word or phrase: <input type="text" name="epq">
-                any of these words: <input type="text" name="oq">
-                none of these words: <input type="text" name="eq">
-                numbers ranging from: <input type="text" name="nlo"> to <input type="text" name="nhi">
+            <div class="sec1">
+                <div class="p1">
+                    <p class="Tit">Find pages with...</p>
+                    <p class="letras">all this words: </p> 
+                    <p class="letras">this exact word or phrase: </p> 
+                    <p class="letras">any of these words:</p>  
+                    <p class="letras">none of these words: </p> 
+                    <p class="letras">numbers ranging from: </p> 
+                </div>
+                <div class="input1">
+                    <input id="in1" type="text" name ="q"> 
+                    <input id="in2" type="text" name="epq">
+                    <input id="in3" type="text" name="oq">
+                    <input id="in4" type="text" name="eq">
+                    <div class="in5"> <input type="text" name="nlo"> to <input type="text" name="nhi"></div>
+                </div>
+                <div class="expli1">
+                    <p class="Tit2">To do this in the search box.</p>
+                    <p class="l2">Type the important words: tri-colour rat terrier</p>
+                    <p class="l2">Put exact words in quotes: "rat terrier"</p>
+                    <p class="l2">Type OR between all the words you want: miniature OR standard</p>
+                    <p class="l2">Put a minus sign just before words that yu don't want: -rodent, -"Jack Russell"</p>
+                    <p class="l2">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+                </div>
+        </div>
+            <div class="sec2"> 
+                <div class="p2">
+                    <p class="Tit">Then narrow your results by...</p>
+                    <p class="letras">language: </p> 
+                    <p class="letras">region: </p> 
+                    <p class="letras">last update:</p>  
+                    <p class="letras">site or domain: </p> 
+                    <p class="letras">terms appearing: </p> 
+                    <p class="letras"> <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637377709931767465-977919358&rd=1">SafeSearc:</a></p>  
+                    <p class="letras">file type: </p> 
+                    <p class="letras"> <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637377709931767465-977919358&rd=1">usage rights:</a> </p> 
+                </div>
+                <div class="input2">
+                    <div id="sle1">
+                        <select class="sle" id="lr" name="lr">
+                            <option value="">any language</option>
+                            <option value="lang_en">English</option>
+                            <option value="lang_it">Italian</option>
+                            <option value="lang_es">Spanish</option>
+                        </select>
+                    </div>
+                    <div id="sle2">
+                        <select class="sle"id="cr" name="cr">
+                            <option value="">any region</option>
+                            <option value="countryCA">Canada</option>
+                            <option value="countryCo">Colombia</option>
+                            <option value="countryIT">Italy</option>
+                            <option value="countryNZ">New Zeland</option>
+                        </select>
+                    </div>
+                    <div  id="sle3">
+                        <select class="sle" id="qdr" name="qdr">
+                            <option value="">anytime</option>
+                            <option value="d">past 24 hours</option>
+                            <option value="w">past week</option>
+                            <option value="m">past month</option>
+                            <option value="y">past year</option>
+                        </select>
+                    </div>
 
-            </div>
-            <div class="fase2"> 
-                <button class="buton" type="submit">Google Search</button>
-                <button class="buton" type="submit">I'm feeling lucky</button>
+                    <input id="in22" type="text" name="sitesearch">
+
+                    <div id="sle4">
+                        <select class="sle" id="occt" name="occt">
+                            <option value="any">anywhere in the page</option>
+                            <option value="title">in the title of the page</option>
+                            <option value="body">in the text of the page</option>
+                            <option value="url">in the URL of the page</option>
+                            <option value="links">in the links to the page</option>
+                        </select>
+                    </div>
+                    <div id="sle5">
+                        <select class="sle"id="safe" name="safe">
+                            <option value="images">Show explicit results</option>
+                            <option value="active">Hide explicit results</option>
+                        </select>
+                    </div>
+                    <div id="sle6">
+                        <select class="sle" id="filetype" name="filetype">
+                            <option value="">any format</option>
+                            <option value="pdf">Adobe Acrobat PDF(.pdf)</option>
+                            <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+                            <option value="doc">Microsoft Word (.doc)</option>
+                            <option value="xls">Microsoft Excel(.xls)</option>
+                        </select>
+                    </div>
+                    <div id="sle7">
+                        <select class="sle" id="tbs" name="tbs">
+                            <option value="">all</option>
+                            <option value="sur:cl">Crative Commons licences</option>
+                            <option value="sur:ol">Commercial and other licences</option>
+                        </select>
+                    </div>
+                    <button class="buton" type="submit">Advanced Search</button>
+                </div>
+                <div class="expli2">
+                    <p class="l3">Find pages in the language that you select.</p>
+                    <p class="l3">Find pages published in a particular region.</p>
+                    <p class="l3">Find pages updated within the time that you specify.</p>
+                    <p class="l3">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p>
+                    <p class="l3">Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
+                    <p class="l3">Tell <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637377749013981555-224201802&rd=1">SafeSearch</a> whether to filter sexually explicit content.</p>
+                    <p class="l3">Find pages in the format that you prefer.</p>
+                    <p class="l3">Find pages that you are free to use yourself.</p>
+                </div>
             </div>
         </form>
     </div>
-    <div class="prefoot"></div>
-    <div class="footer2"></div>
+    <div class="prefoot">
+        <p class="Tit">You can also...</p>
+        <a  class="an" href="https://support.google.com/websearch/answer/2466433?visit_id=637378112616702240-3453790836&p=adv_pages_similar&hl=en&rd=1">Find pages that are similar to a URL</a><br>
+        <a class="an"href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637378112616702240-3453790836&rd=1">Search pages that you've visited</a><br>
+        <a class="an"href="https://support.google.com/websearch/answer/2466433?visit_id=637378112616702240-3453790836&p=adv_operators&hl=en&rd=1">Use operators in the search box</a><br>
+        <a class="an"href="https://www.google.com/preferences?hl=en-CO">Customise your search settings</a>
+    </div>
+    <div class="footer2">
+        <div class="F1">
+            <p>Colombia</p>
+        </div>
+        <div class="F2">
+                <a class="lf" href="https://support.google.com/websearch/?visit_id=637378112616702240-3453790836&hl=en-CO&rd=2#topic=3378866">Help</a>
+                <a class="lf" href="https://policies.google.com/privacy?hl=en-CO&fg=1">Privacy</a>
+                <a class="lf" href="https://policies.google.com/terms?hl=en-CO&fg=1">Terms</a>
+        </div>
+    </div>
     
 </body>
 </html>
