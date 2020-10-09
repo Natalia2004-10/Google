@@ -1,4 +1,5 @@
 .grid3 {
+<<<<<<< HEAD
   height: 100wh;
   margin: 0%;
   display: grid;
@@ -100,3 +101,387 @@
   grid-area: e;
   color: #e53134;
 }
+=======
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.25fr 3.5fr 1fr 0.25;
+    grid-template-areas:
+      "rejilla1"
+      "form"
+      "prefoot"
+      "footer";
+  }
+  
+  .rejilla1 {
+    grid-area: rejilla1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.25fr 0.25fr;
+    grid-template-areas:
+      "part1"
+      "part2";
+  }
+
+  .form {
+    grid-area: form;
+    border-top: 1px solid #e4e4e4;
+    font-family: arial,sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr 7fr;
+    grid-template-areas: 
+    "sec1"
+    "sec2";
+  }
+  
+  .footer2 {
+    grid-area: footer;
+  }
+  
+  .prefoot {
+    grid-area: prefoot;
+  }
+  
+  .derecho {
+    grid-area: derecho;
+    font-family: arial, sans-serif;
+  }
+  
+  .part1 {
+    grid-area: part1;
+    background: #e5e5e5;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "logo1 . derecho";
+  }
+  
+  .part2 {
+    grid-area: part2;
+    color: #d93025;
+    font-size: 20px;
+    margin: 15px 25px;
+    font-family: arial, sans-serif;
+  }
+  
+  .logo1 {
+    grid-area: logo1;
+    /* position: absolute; */
+    padding: 0 20px 0 15px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 100%;
+    grid-template-areas: "G o o2 g l e";
+  }
+  
+  .letra {
+    font-size: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #G {
+    grid-area: G;
+    color: #1590ff;
+  }
+  #o {
+    grid-area: o;
+    color: #e53134;
+  }
+  
+  #o2 {
+    grid-area: o2;
+    color: #ffd100;
+  }
+  
+  #g {
+    grid-area: g;
+    color: #1590ff;
+  }
+  
+  #l {
+    grid-area: l;
+    color: #019101;
+  }
+  
+  #e {
+    grid-area: e;
+    color: #e53134;
+  }
+
+  .sec1{
+    grid-area: sec1;
+    display: grid;
+    grid-template-columns: 2fr 4.5fr 3.5fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "para1 input1 expli1";
+  }
+
+  .p1{
+    grid-area: para1;
+    margin: 15px 25px;
+    padding-top: 10px;
+  }
+
+  .input1{
+    grid-area: input1;
+    display: grid;
+    padding-top: 58px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(11,auto);
+    grid-template-areas: 
+    "."
+    "i1"
+    "."
+    "i2"
+    "."
+    "i3"
+    "."
+    "i4"
+    "."
+    "i5"
+    ".";
+  }
+
+  .expli1{
+    grid-area: expli1;
+    margin: 15px 25px;
+    padding-top: 10px;
+  }
+
+  #in1{
+    grid-area: i1;
+  }
+
+  #in2{
+    grid-area: i2;
+  }
+
+  #in3{
+    grid-area: i3;
+  }
+
+  #in4{
+    grid-area: i4;
+  }
+
+  .in5{
+    grid-area: i5;
+    font-size: small;
+   }
+
+  .letras{
+    font-size: small;
+    margin: 15px 25px;
+    padding-top: 10px;
+  }
+
+  .Tit{
+    margin: 15px 25px;
+  }
+
+  .l2{
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    position: relative;
+    padding-top: 18px;
+  }
+
+  .Tit2{
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+    padding-left: 5px;
+  }
+
+  .sec2{
+    grid-area: sec2;
+    border-top: 1px solid #e4e4e4;
+    display: grid;
+    grid-template-columns: 2fr 4.5fr 3.5fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "para2 input2 expli2";
+  }
+
+  .p2{
+    grid-area: para2;
+    margin: 15px 25px;
+    padding-top: 10px;
+  }
+
+  .input2{
+    grid-area: input2;
+    display: grid;
+    padding-top: 58px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(35,auto);
+    grid-template-areas: 
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "."
+    "sle1"
+    "."
+    "."
+    "sle2"
+    "."
+    "."
+    "sle3"
+    "."
+    "."
+    "in22"
+    "."
+    "."
+    "sle4"
+    "."
+    "."
+    "sle5"
+    "."
+    "."
+    "sle6"
+    "."
+    "."
+    "sle7"
+    "."
+    "."
+    "buton";
+  }
+
+  .expli2{
+    grid-area: expli2;
+    margin: 15px 25px;
+    padding-top: 60px;
+    padding-block-end: 30px;
+  }
+
+  #sle1{
+    grid-area: sle1;
+   }
+
+   
+  #sle2{
+    grid-area: sle2;
+   }
+
+   
+  #sle3{
+    grid-area: sle3;
+   }
+
+   
+  #sle4{
+    grid-area: sle4;
+   }
+
+   
+  #sle5{
+    grid-area: sle5;
+   }
+
+  #sle6{
+    grid-area: sle6;
+   }
+
+  #sle7{
+    grid-area: sle7;
+   }
+
+   #in22{
+     grid-area: in22;
+   }
+
+   .sle{
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+    border: 1px solid #dcdcdc;
+    color: #444;
+    cursor: default;
+    font-family: arial,sans-serif;
+    margin: 0 2px;
+    font-weight: bold;
+    font-size: 11px;
+    text-indent: 4px;
+   }
+
+   
+  .l3{
+    min-width: 160px;
+    margin: 0 0 8px 1%;
+    color: #555;
+    font-size: 11px;
+    padding-left: 5px;
+    position: relative;
+    padding-top: 18px;
+  }
+
+  .buton{
+    grid-area: buton;
+    box-shadow: none;
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    height: 30px;
+    width: 25%;
+  }
+
+  .footer2 {
+    grid-area: footer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5f6368;
+    display: grid;
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.2fr;
+    grid-template-areas:
+      "F1"
+      "F2";
+  }
+  
+  .F1 {
+    grid-area: F1;
+    display: inline-block;
+    margin-left: 30px;
+    text-align: left;
+  }
+  
+  .F2 {
+    grid-area: F2;
+    display: inline-block;
+    color: #5f6368;
+    text-decoration: none;
+    border-top: 1px solid #e4e4e4;
+  }
+
+  .prefoot{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .an{
+    margin: 15px 25px;
+    font-size: small;
+  }
+>>>>>>> 72f969d26d23b73a77ec56901bd421f35c73bedb

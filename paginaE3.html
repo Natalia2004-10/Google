@@ -4,39 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda avanzada en google</title>
-    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="estilosadvanced.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<body class="grid">
-    <div class="nav"></div>
-    <div class="principal">
-        <div class="logo">
-            <h1 class="letra" id="G">G</h1> 
-            <h1 class="letra" id="o">o</h1>
-            <h1 class="letra"id="o2">o</h1>
-            <h1 class="letra" id="g" >g</h1>
-            <h1 class="letra" id="l">l</h1>
-            <h1 class="letra" id="e">e</h1>
-        </div>
-        <form action="https://www.google.com/search">
-            <div class="areaInput">
-                <input type="text" name ="q">
-                <i class="fa fa-search" aria-hidden="true"></i>  
+<body class="grid3">
+    <div class="rejilla1">
+        <div class="part1">
+            <div class="logo1">
+                <h1 class="letra" id="G">G</h1> 
+                <h1 class="letra" id="o">o</h1>
+                <h1 class="letra" id="o2">o</h1>
+                <h1 class="letra" id="g" >g</h1>
+                <h1 class="letra" id="l">l</h1>
+                <h1 class="letra" id="e">e</h1>
             </div>
-            <div class="botones"> 
-                <button class="buton" type="submit">Buscar con Google</button>
-                <button class="buton" type="submit">Me siento con suerte</button>
+            <div class="derecho"> 
+                <a class="link" href="paginaE1.html">Buscar en Google</a>
+                <a class="link" href="paginaE2.html">Buscar Google Imágenes</a>
+            </div>
+        </div>
+        <div class="part2">
+            <p>Búsqueda avanzada</p>
+        </div>
+    </div>
+    <div class="form">
+        <form action="https://www.google.com/search">
+            <div class="sec1">
+                <div class="p1">
+                    <p class="Tit">Mostrar páginas que contengan...</p>
+                    <p class="letras">todas estas palabras:</p> 
+                    <p class="letras">esta palabra o frase exactas:</p> 
+                    <p class="letras">cualquiera de estas palabras:</p>  
+                    <p class="letras">ninguna de estas palabras:</p> 
+                    <p class="letras">números del:</p> 
+                </div>
+                <div class="input1">
+                    <input id="in1" type="text" name ="q"> 
+                    <input id="in2" type="text" name="epq">
+                    <input id="in3" type="text" name="oq">
+                    <input id="in4" type="text" name="eq">
+                    <div class="in5"> <input type="text" name="nlo"> al <input type="text" name="nhi"></div>
+                </div>
+                <div class="expli1">
+                    <p class="Tit2">Para hacer esto en el cuadro de búsqueda</p>
+                    <p class="l2">Ingresa las palabras importantes: Terrier ratonero tricolor .</p>
+                    <p class="l2">Ingresa las palabras exactas entre comillas: "Terrier ratonero" .</p>
+                    <p class="l2">Ingresa OR entre las palabras que desees: En miniatura OR estándar .</p>
+                    <p class="l2">Ingresa un signo menos justo delante de las palabras que no deseas que aparezcan: -Roedor, -"Jack Russell" .</p>
+                    <p class="l2">ngresa dos puntos entre los números y agrega una unidad de medida: 10..35 lb, $300..$500, 2010..2011.</p>
+                </div>
+        </div>
+            <div class="sec2"> 
+                <div class="p2">
+                    <p class="Tit">Luego restringe tus resultados por...</p>
+                    <p class="letras">idioma:</p> 
+                    <p class="letras">región: </p> 
+                    <p class="letras">última actualización:</p>  
+                    <p class="letras">sitio o dominio:</p> 
+                    <p class="letras">términos que aparecen: </p> 
+                    <p class="letras"> <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637377709931767465-977919358&rd=1">SafeSearc:</a></p>  
+                    <p class="letras">tipo de archivo:</p> 
+                    <p class="letras"> <a href="https://support.google.com/websearch/answer/29508?p=ws_images_usagerights&hl=en&visit_id=637377709931767465-977919358&rd=1">derechos de uso:</a> </p> 
+                </div>
+                <div class="input2">
+                    <div id="sle1">
+                        <select class="sle" id="lr" name="lr">
+                            <option value="">cualquier idioma</option>
+                            <option value="lang_en">Inglés</option>
+                            <option value="lang_it">Italiano</option>
+                            <option value="lang_es">Español</option>
+                        </select>
+                    </div>
+                    <div id="sle2">
+                        <select class="sle"id="cr" name="cr">
+                            <option value="">cualquier región</option>
+                            <option value="countryCA">Canada</option>
+                            <option value="countryCo">Colombia</option>
+                            <option value="countryIT">Italia</option>
+                            <option value="countryNZ">Nueva Zelanda</option>
+                        </select>
+                    </div>
+                    <div  id="sle3">
+                        <select class="sle" id="qdr" name="qdr">
+                            <option value="">en cualquier momento</option>
+                            <option value="d">past 24 hours</option>
+                            <option value="w">past week</option>
+                            <option value="m">past month</option>
+                            <option value="y">past year</option>
+                        </select>
+                    </div>
+
+                    <input id="in22" type="text" name="sitesearch">
+
+                    <div id="sle4">
+                        <select class="sle" id="occt" name="occt">
+                            <option value="any">En cualquier parte de la página</option>
+                            <option value="title">in the title of the page</option>
+                            <option value="body">in the text of the page</option>
+                            <option value="url">in the URL of the page</option>
+                            <option value="links">in the links to the page</option>
+                        </select>
+                    </div>
+                    <div id="sle5">
+                        <select class="sle"id="safe" name="safe">
+                            <option value="images">Mostrar resultados explícitos</option>
+                            <option value="active">Hide explicit results</option>
+                        </select>
+                    </div>
+                    <div id="sle6">
+                        <select class="sle" id="filetype" name="filetype">
+                            <option value="">Cualquier formato</option>
+                            <option value="pdf">Adobe Acrobat PDF(.pdf)</option>
+                            <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+                            <option value="doc">Microsoft Word (.doc)</option>
+                            <option value="xls">Microsoft Excel(.xls)</option>
+                        </select>
+                    </div>
+                    <div id="sle7">
+                        <select class="sle" id="tbs" name="tbs">
+                            <option value="">todos</option>
+                            <option value="sur:cl">Licencias Crative Commons</option>
+                            <option value="sur:ol">Licencias comerciales y otras</option>
+                        </select>
+                    </div>
+                    <button class="buton" type="submit">Búsqueda avanzada</button>
+                </div>
+                <div class="expli2">
+                    <p class="l3">Busca páginas en el idioma que seleccionas.</p>
+                    <p class="l3">Busca páginas publicadas en una región determinada.</p>
+                    <p class="l3">Busca páginas actualizadas en el transcurso del período que especificas.</p>
+                    <p class="l3">Realiza búsquedas en un sitio (como wikipedia.org ) o restringe los resultados a un dominio como .edu, .org o .gov.</p>
+                    <p class="l3">Busca términos en toda la página, en su título o en su dirección web, o vínculos que te dirijan a la página que estás buscando.</p>
+                    <p class="l3">Indica a <a href="https://support.google.com/websearch/answer/510?p=adv_safesearch&hl=en&visit_id=637377749013981555-224201802&rd=1">SafeSearch</a> si quieres ue filtre contenido sexualmente explícito.</p>
+                    <p class="l3">Busca páginas del formato que prefieras.</p>
+                    <p class="l3">Busca páginas que puedas usar libremente.</p>
+                </div>
             </div>
         </form>
-        <div class="foot">
-            <p>Ofrecido por Google en: <a href="paginai1.html"> Italiano</a>    <a href="pagina1.html">English</a></p>
+    </div>
+    <div class="prefoot">
+        <p class="Tit">También puedes...</p>
+        <a  class="an" href="https://support.google.com/websearch/answer/2466433?visit_id=637378112616702240-3453790836&p=adv_pages_similar&hl=en&rd=1">Buscar páginas similares a una URL</a><br>
+        <a class="an"href="https://support.google.com/websearch/answer/54068?p=adv_pages_visited&hl=en&visit_id=637378112616702240-3453790836&rd=1">Buscar las páginas visitadas</a><br>
+        <a class="an"href="https://support.google.com/websearch/answer/2466433?visit_id=637378112616702240-3453790836&p=adv_operators&hl=en&rd=1">Usar los operadores del cuadro de búsqueda</a><br>
+        <a class="an"href="https://www.google.com/preferences?hl=en-CO">Personalizar la configuración de búsqueda</a>
+    </div>
+    <div class="footer2">
+        <div class="F1">
+            <p>Colombia</p>
+        </div>
+        <div class="F2">
+                <a class="lf" href="https://support.google.com/websearch/?visit_id=637378112616702240-3453790836&hl=en-CO&rd=2#topic=3378866">Ayuda</a>
+                <a class="lf" href="https://policies.google.com/privacy?hl=en-CO&fg=1">Privacidad</a>
+                <a class="lf" href="https://policies.google.com/terms?hl=en-CO&fg=1">Condiciones</a>
         </div>
     </div>
-    <div class="aside"> 
-        <a class="link" href="paginaE1.html">Buscar en Google</a>
-        <a class="link" href="paginaE2.html">Buscar Google Imágenes</a>
-    </div>
-    <div class="footer"></div>
     
 </body>
 </html>
